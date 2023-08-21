@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+         /*   
+            # = id
+            . = class
+            : = pseudoclass
+            :: = pseudoelement
+            > = children
+         */
+        
+        a {
+            text-decoration: none;
+            color: rgb(77, 121, 11);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            
+        }
+        
+
+        a:hover{
+            color: blueviolet;
+
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a::after{
+            content: '\2190';
+            font-weight: normal;
+            color: rgb(167, 111, 6);
+            font-size: 1.5em;
+        }
+        /* Para colocar as setinhas, você pode usar o código HEX Unicode com uma barra inversa (\) antes, que seria 2192 para seta para direita (→) e 2190 para seta para esquerda (←) dentro de aspas simples: 
+        content: ' \2192'; */
+        a::before{
+            content: '\2192';
+            font-weight: normal;
+            color: rgb(167, 111, 6);
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://youtube.com" target="_blank">Repositório GitHub</a></li>
+        <li><a href="#">Canal Youtube</a></li>
+        <li><a href="#"> Site pessoal</a></li>
+        <li><a href="#2"> Site pessoal</a></li>
+        <li><a href="#3"> Site pessoal</a></li>
+        
+    </ul>
+</body>
+</html>
