@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando a posição da imagem no background</title>
+
+    <style>
+        div.quadro {
+            height: 200px;
+            border: 2px solid black;
+            margin: 30px 0px;
+            border-radius: 10px;
+            background-image: url(images/wallpaper003.jpg);
+        }
+
+        div#q1 {
+            background-position: left top;
+        }
+
+        div#q2 {
+            background-position: left center;
+        }
+
+        div#q3 {
+            background-position: top right;
+        }
+
+        div#q4 {
+            background-position: center bottom;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="quadro" id="q1"></div>
+    <div class="quadro" id="q2"></div>
+    <div class="quadro" id="q3"></div>
+    <div class="quadro" id="q4"></div>
+</body>
+</html>
