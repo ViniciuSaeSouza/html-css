@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas</title>
     <style>
@@ -9,13 +9,22 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 400px;
+            min-width: 400px;
+            height: 1000px;
             border-collapse: collapse;
+            position: relative;
         }
         
-        td {
+        caption {
+            background-color: lightgray;
+            font-weight: bold;
+            font-size: large;
+            padding: 10px;
+        }
+        
+        td, th {
             border: 1px solid black;
-            padding: 8px;
+            padding: px;
         }
 
         td.dado {
@@ -26,9 +35,20 @@
             background-color: lightgray;
         }
 
-        th {
-            background-color: lightgray;
+        th, tfoot {
+            background-color: rgb(49, 47, 47);
+            color: white;
             padding: 10px;
+        }
+
+        tfoot {
+            width: 2em;
+        } 
+            
+        thead tr {
+            position: sticky;
+            top: -1px;
+            margin-top: 0;
         }
 
     </style>
@@ -86,7 +106,80 @@
                 <td>B8</td>
                 <td>C8</td>
             </tr>
+            <tr class="linha">
+                <td>A9</td>
+                <td>B9</td>
+                <td>C9</td>
+            </tr>
+            <tr class="linha">
+                <td>A10</td>
+                <td>B10</td>
+                <td>C10</td>
+            </tr>
+            <tr class="linha">
+                <td>A11</td>
+                <td>B11</td>
+                <td>C11</td>
+            </tr>
+            <tr class="linha">
+                <td>A12</td>
+                <td>B12</td>
+                <td>C12</td>
+            </tr>
+            <tr class="linha">
+                <td>A13</td>
+                <td>B13</td>
+                <td>C13</td>
+            </tr>
+            <tr class="linha">
+                <td>A14</td>
+                <td>B14</td>
+                <td>C14</td>
+            </tr>
+            <tr class="linha">
+                <td>A15</td>
+                <td>B15</td>
+                <td>C15</td>
+            </tr>
+            <tr class="linha">
+                <td>A16</td>
+                <td>B16</td>
+                <td>C16</td>
+            </tr>
+            <tr class="linha">
+                <td>A17</td>
+                <td>B17</td>
+                <td>C17</td>
+            </tr>
+            <tr class="linha">
+                <td>A18</td>
+                <td>B18</td>
+                <td>C18</td>
+            </tr>
+            <tr class="linha">
+                <td>A19</td>
+                <td>B19</td>
+                <td>C19</td>
+            </tr>
+            <tr class="linha">
+                <td>A19</td>
+                <td>B19</td>
+                <td>C19</td>
+            </tr>
         </tbody>
+        <tfoot>
+            <th colspan="2">Titulo footer</th>
+            <td>Dado footer</td>
+        </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum nisi, aspernatur necessitatibus officia autem dolorum rerum sapiente voluptatibus alias doloremque expedita modi perspiciatis itaque reprehenderit tempore veritatis! Iure, provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, debitis voluptatem harum sequi quae dolores provident sapiente vel nostrum. Nulla cupiditate error molestias itaque maiores necessitatibus commodi culpa incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam deleniti at laudantium, odio sequi libero obcaecati cumque. Veniam sint repudiandae quae nulla fugit eius neque repellat natus itaque odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim culpa, tempore laudantium sapiente repudiandae. Accusamus aspernatur labore ea a, adipisci atque voluptate optio blanditiis sed perferendis rem id ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam autem ipsa iusto, quibusdam, sequi repellendus sapiente maiores velit numquam, aliquam dolore quam quidem omnis. Iure id facilis aliquid architecto quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum nisi, aspernatur necessitatibus officia autem dolorum rerum sapiente voluptatibus alias doloremque expedita modi perspiciatis itaque reprehenderit tempore veritatis! Iure, provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, debitis voluptatem harum sequi quae dolores provident sapiente vel nostrum. Nulla cupiditate error molestias itaque maiores necessitatibus commodi culpa incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam deleniti at laudantium, odio sequi libero obcaecati cumque. Veniam sint repudiandae quae nulla fugit eius neque repellat natus itaque odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim culpa, tempore laudantium sapiente repudiandae. Accusamus aspernatur labore ea a, adipisci atque voluptate optio blanditiis sed perferendis rem id ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam autem ipsa iusto, quibusdam, sequi repellendus sapiente maiores velit numquam, aliquam dolore quam quidem omnis. Iure id facilis aliquid architecto quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum nisi, aspernatur necessitatibus officia autem dolorum rerum sapiente voluptatibus alias doloremque expedita modi perspiciatis itaque reprehenderit tempore veritatis! Iure, provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, debitis voluptatem harum sequi quae dolores provident sapiente vel nostrum. Nulla cupiditate error molestias itaque maiores necessitatibus commodi culpa incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam deleniti at laudantium, odio sequi libero obcaecati cumque. Veniam sint repudiandae quae nulla fugit eius neque repellat natus itaque odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim culpa, tempore laudantium sapiente repudiandae. Accusamus aspernatur labore ea a, adipisci atque voluptate optio blanditiis sed perferendis rem id ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam autem ipsa iusto, quibusdam, sequi repellendus sapiente maiores velit numquam, aliquam dolore quam quidem omnis. Iure id facilis aliquid architecto quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum nisi, aspernatur necessitatibus officia autem dolorum rerum sapiente voluptatibus alias doloremque expedita modi perspiciatis itaque reprehenderit tempore veritatis! Iure, provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, debitis voluptatem harum sequi quae dolores provident sapiente vel nostrum. Nulla cupiditate error molestias itaque maiores necessitatibus commodi culpa incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam deleniti at laudantium, odio sequi libero obcaecati cumque. Veniam sint repudiandae quae nulla fugit eius neque repellat natus itaque odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim culpa, tempore laudantium sapiente repudiandae. Accusamus aspernatur labore ea a, adipisci atque voluptate optio blanditiis sed perferendis rem id ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam autem ipsa iusto, quibusdam, sequi repellendus sapiente maiores velit numquam, aliquam dolore quam quidem omnis. Iure id facilis aliquid architecto quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum nisi, aspernatur necessitatibus officia autem dolorum rerum sapiente voluptatibus alias doloremque expedita modi perspiciatis itaque reprehenderit tempore veritatis! Iure, provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, debitis voluptatem harum sequi quae dolores provident sapiente vel nostrum. Nulla cupiditate error molestias itaque maiores necessitatibus commodi culpa incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam deleniti at laudantium, odio sequi libero obcaecati cumque. Veniam sint repudiandae quae nulla fugit eius neque repellat natus itaque odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim culpa, tempore laudantium sapiente repudiandae. Accusamus aspernatur labore ea a, adipisci atque voluptate optio blanditiis sed perferendis rem id ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam autem ipsa iusto, quibusdam, sequi repellendus sapiente maiores velit numquam, aliquam dolore quam quidem omnis. Iure id facilis aliquid architecto quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum nisi, aspernatur necessitatibus officia autem dolorum rerum sapiente voluptatibus alias doloremque expedita modi perspiciatis itaque reprehenderit tempore veritatis! Iure, provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, debitis voluptatem harum sequi quae dolores provident sapiente vel nostrum. Nulla cupiditate error molestias itaque maiores necessitatibus commodi culpa incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam deleniti at laudantium, odio sequi libero obcaecati cumque. Veniam sint repudiandae quae nulla fugit eius neque repellat natus itaque odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim culpa, tempore laudantium sapiente repudiandae. Accusamus aspernatur labore ea a, adipisci atque voluptate optio blanditiis sed perferendis rem id ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam autem ipsa iusto, quibusdam, sequi repellendus sapiente maiores velit numquam, aliquam dolore quam quidem omnis. Iure id facilis aliquid architecto quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum nisi, aspernatur necessitatibus officia autem dolorum rerum sapiente voluptatibus alias doloremque expedita modi perspiciatis itaque reprehenderit tempore veritatis! Iure, provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, debitis voluptatem harum sequi quae dolores provident sapiente vel nostrum. Nulla cupiditate error molestias itaque maiores necessitatibus commodi culpa incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam deleniti at laudantium, odio sequi libero obcaecati cumque. Veniam sint repudiandae quae nulla fugit eius neque repellat natus itaque odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim culpa, tempore laudantium sapiente repudiandae. Accusamus aspernatur labore ea a, adipisci atque voluptate optio blanditiis sed perferendis rem id ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam autem ipsa iusto, quibusdam, sequi repellendus sapiente maiores velit numquam, aliquam dolore quam quidem omnis. Iure id facilis aliquid architecto quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum nisi, aspernatur necessitatibus officia autem dolorum rerum sapiente voluptatibus alias doloremque expedita modi perspiciatis itaque reprehenderit tempore veritatis! Iure, provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat, debitis voluptatem harum sequi quae dolores provident sapiente vel nostrum. Nulla cupiditate error molestias itaque maiores necessitatibus commodi culpa incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam deleniti at laudantium, odio sequi libero obcaecati cumque. Veniam sint repudiandae quae nulla fugit eius neque repellat natus itaque odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim culpa, tempore laudantium sapiente repudiandae. Accusamus aspernatur labore ea a, adipisci atque voluptate optio blanditiis sed perferendis rem id ex? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam autem ipsa iusto, quibusdam, sequi repellendus sapiente maiores velit numquam, aliquam dolore quam quidem omnis. Iure id facilis aliquid architecto quod.</p>
+
 </body>
 </html>
