@@ -21,6 +21,15 @@ main {
     position: relative;
 }
 
+iframe#tela_home {
+    position: relative;
+    top: 82px;
+    left: 23px;
+    max-width: 266px;
+    min-height: 468px;
+    
+}
+
 section#telefone {
     height: 627px;
     width: 311px;
