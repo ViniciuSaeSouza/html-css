@@ -21,13 +21,13 @@ main {
     position: relative;
 }
 
-iframe#tela_home {
+iframe#tela {
     position: relative;
-    top: 82px;
-    left: 23px;
-    max-width: 266px;
-    min-height: 468px;
-    
+    top: 83px;
+    left: 25px;
+    max-width: 262px;
+    min-height: 465px;
+    border-radius: 2px;
 }
 
 section#telefone {
@@ -38,4 +38,24 @@ section#telefone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+section#sideBar img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 20px 10px;
+    box-shadow: 1px 1px 2px 0px #00000082;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* section#sideBar {
+    text-align: right;
+}*/
+
+section#sideBar img:hover {
+    border: 2px solid white;
+    transform: translate(5px, -5px);
+    box-shadow: 2px 2px 2px 0px #000000c2;
+    transition: transform .3s;
 }
