@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <!--Utilizar 'label' cria uma correlação entre objetos, esta correlação pode ser identificada por serviços de busca e auxiliar o usuário mobile a ter uma zona de interação maior. (CLicando no parte 'Nome: ' e acionando a área de input da mesma p.e) // 
+    São utilizados os valores das 'id's nas label's para corrrelaciona-las. //
+    O atributo name se relaciona melhor com HTML e PHP && E o atributo id se relaciona melhor com o JS. (explicação resumida sobre diferença entre name e ID dada pelo professor Guanabara)
+    -->
+
+    <h1>Primeiro Formulário</h1>
+    <form action="" autocomplete="off" method="get">
+        <p><label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p><label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
