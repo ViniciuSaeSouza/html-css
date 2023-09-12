@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
     <style>
-        body {
-            font: normal 1em Arial;
-        }
+      body {
+        font: normal 1em Arial;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Elemento Output em formularios</h1>
 
     <form action="" method="get" autocomplete="on">
-        <p>
-            <label for="range">Qual o número:</label>
-            <input type="range" name="range" id="irange" min="1" max="5" oninput="display()" value="3">
-            <output name="val" id="ival">3</output>
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+      <p>
+        <label for="range">Qual o número:</label>
+        <input
+          type="range"
+          name="range"
+          id="irange"
+          min="1"
+          max="5"
+          oninput="display()"
+          value="3"
+        />
+        <output name="val" id="ival">3</output>
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
     </form>
 
     <script>
-        var val = document.querySelector('output#ival')
-        var range = document.querySelector('input#irange')
-        
-        function display() {
-            val.innerHTML = Number(range.value)
-        }
+      var val = document.querySelector("output#ival");
+      var range = document.querySelector("input#irange");
 
+      function display() {
+        val.innerHTML = Number(range.value);
+      }
     </script>
-
-
-</body>
+  </body>
 </html>
