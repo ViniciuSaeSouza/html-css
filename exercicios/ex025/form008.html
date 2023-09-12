@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
     <style>
-        body {
-            font: normal 1em Arial;
-        }
+      body {
+        font: normal 1em Arial;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Elemento Output em formularios</h1>
 
     <form action="" method="get" autocomplete="on">
-        <p>
-            <label for="in1">Número 1: </label>
-            <input type="number" name="n1" id="in1" min="0" max="50" oninput="soma()">
-        </p>
-        <p>
-            <label for="in2">Número 2: </label>
-            <input type="number" name="n2" id="in2" min="0" max="50" oninput="soma()">
-        </p>
-        <p>
-            <label for="isoma">Soma: </label>
-            <output name="res" id="res">0</output>
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+      <p>
+        <label for="in1">Número 1: </label>
+        <input
+          type="number"
+          name="n1"
+          id="in1"
+          min="0"
+          max="50"
+          oninput="soma()"
+        />
+      </p>
+      <p>
+        <label for="in2">Número 2: </label>
+        <input
+          type="number"
+          name="n2"
+          id="in2"
+          min="0"
+          max="50"
+          oninput="soma()"
+        />
+      </p>
+      <p>
+        <label for="isoma">Soma: </label>
+        <output name="res" id="res">0</output>
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
     </form>
 
     <script>
-        var n1 = document.querySelector('input#in1')
-        var n2 = document.querySelector('input#in2')
-        var res = document.querySelector('output#res')
-        
-        function soma() {
-            var soma = Number(n1.value) + Number(n2.value)
-            res.innerHTML = soma
-        }
+      var n1 = document.querySelector("input#in1");
+      var n2 = document.querySelector("input#in2");
+      var res = document.querySelector("output#res");
 
+      function soma() {
+        var soma = Number(n1.value) + Number(n2.value);
+        res.innerHTML = soma;
+      }
     </script>
-
-
-</body>
+  </body>
 </html>
