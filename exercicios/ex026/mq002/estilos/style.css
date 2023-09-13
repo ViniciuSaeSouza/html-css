@@ -26,3 +26,17 @@ h1 {
     text-align: center;
     padding: 15px;
 }
+
+@media (orientation: portrait){
+    body {
+        background: #233eff url(../imagens/cev-portrait.jpg) bottom center no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (orientation: landscape){
+    body {
+        background: #233eff url(../imagens/cev-landscape.jpg) left bottom no-repeat;
+        background-size: contain;
+    }
+}
