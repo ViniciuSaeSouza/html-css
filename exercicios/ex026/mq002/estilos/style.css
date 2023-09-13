@@ -1,3 +1,28 @@
 @charset "UTF-8";
 
 /* Estilos Gerais */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #233eff;
+    width: 100vw;
+    height: 100vh;
+}
+
+html {
+    background-color: #233eff;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #0b1249;
+    text-align: center;
+    padding: 15px;
+}

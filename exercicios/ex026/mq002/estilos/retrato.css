@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
-/* Portrait mode (em pé) */
+/* Portrait mode (em pé) Color Image Position Repeat Attachment */ 
+
+body {
+    background: #233eff url(../imagens/cev-portrait.jpg) bottom center no-repeat;
+    background-size: contain;
+}
