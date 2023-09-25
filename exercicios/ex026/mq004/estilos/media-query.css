@@ -24,7 +24,13 @@ Grandes telas: acima de 1200px
         color: black;
     }
     main {
+        width: 90vw;
         border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Esta impressão foi feita por Saesminerais através do cursoemvideo.com';
+        text-decoration: overline;
     }
 }
 
