@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -20,7 +22,7 @@ header > h1 {
     text-align: center;
 }
 
-span#burger {
+i#burger {
     background: rgb(44, 44, 44);
     color: white;
     display: block;
@@ -36,6 +38,7 @@ span#burger:hover {
 
 menu {
     display: none;
+    text-align: center;
 }
 
 menu > ul {
@@ -50,6 +53,7 @@ menu > ul > li > a {
     background-color: rgb(85, 85, 85);
     color: white;
     border-top: 2px solid gray;
+    border-radius: 5px;
 }
 
 menu > ul > li > a:hover {
@@ -58,6 +62,7 @@ menu > ul > li > a:hover {
 
 main {
     width: 90vw;
+    max-width: 972px;
     background-color: white;
     margin: auto;
     margin-top: 10px;
